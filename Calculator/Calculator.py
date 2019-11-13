@@ -6,7 +6,7 @@ from Calculator.Square import square
 from Calculator.sqroot import sqroot
 
 
-class Calculator:
+class Calculator: 
     result = 0
 
     def __init__(self):
