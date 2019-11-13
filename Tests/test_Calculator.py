@@ -13,7 +13,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_subtraction_csv(self):
         test_sub= CsvReader("Tests/Data/subtraction.csv").data
-        for row in test_sub:
+        for row in test_sub: 
             self.assertEqual(self.calculator.subtract(int(row['Value 1']), int(row['Value 2'])), int(row['Result']))
 
     # def test_subtraction(self):
@@ -33,7 +33,7 @@ class MyTestCase(unittest.TestCase):
         for row in test_sq:
             self.assertEqual(self.calculator.square(int(row['Value 1'])), int(row['Result']))
 
-    def test_multiplication_csv(self): 
+    def test_multiplication_csv(self):
         test_mul= CsvReader("Tests/Data/multiplication.csv").data
         for row in test_mul:
             self.assertEqual(self.calculator.multiply(int(row['Value 1']), int(row['Value 2'])), int(row['Result']))
