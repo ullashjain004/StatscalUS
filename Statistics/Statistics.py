@@ -1,6 +1,6 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
-from Statistics.Median import median
+##from Statistics.Median import median
 from CsvReader.CsvReader import CsvReader
 
 class Statistics(Calculator):
