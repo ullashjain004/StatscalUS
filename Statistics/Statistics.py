@@ -7,7 +7,7 @@ from Statistics.Mode import mode
 from Statistics.StandardDeviation import stddev
 from Statistics.variance import variance
 from Statistics.Zscore import Zscore
-
+from Statistics.PopCorrCoeff import pop_corr_coef
 
 
 
@@ -46,4 +46,8 @@ class Statistics(Calculator):
 
     def pop_z_score(self, a):
         self.result = Zscore(a)
+        return self.result
+
+    def popcorrcoeff(self, a, b):
+        self.result = pop_cor_coeff(a, b)
         return self.result
