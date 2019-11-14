@@ -7,8 +7,8 @@ from Statistics.Mode import mode
 from Statistics.StandardDeviation import stddev
 from Statistics.variance import variance
 from Statistics.Zscore import Zscore
-from Statistics.PopCorrCoeff import pop_corr_coef
-
+from Statistics.PopCorrCoeff import pop_corr
+from Statistics.Confidence_Interval import confi_int
 
 
 class Statistics(Calculator):
@@ -44,10 +44,14 @@ class Statistics(Calculator):
         self.result = variance(a)
         return self.result
 
+    def pop_confi_int(self, a):
+        self.result = confi_int(a)
+        return self.result
+
     def pop_z_score(self, a):
         self.result = Zscore(a)
         return self.result
 
     def popcorrcoeff(self, a, b):
-        self.result = pop_cor_coeff(a, b)
+        self.result = pop_corr(a, b)
         return self.result
