@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_Pop_Mean_calculator(self):
         test_mean_data = CsvReader('Tests/Data/StatsData.csv').data
-        answer = CsvReader('Tests/Data/StataDataAns.csv').data  
+        answer = CsvReader('Tests/Data/StataDataAns.csv').data
         dataset = []
         for row in test_mean_data:
             a = int(row['PopData'])
@@ -26,16 +26,16 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    # def test_Median_calculator(self):
-    #     test_data = CsvReader('Tests/Data/StatsData.csv').data
-    #     answer = CsvReader('Tests/Data/StataDataAns.csv').data
-    #     dataset = []
-    #     for row in test_data:
-    #         x = int(row['PopData'])
-    #         dataset.append(x)
-    #     for column in answer:
-    #         result = float((column['Median']))
-    #     self.assertEqual(self.statistics.median(dataset), result)
+    def test_Median_calculator(self):
+        test_median_data = CsvReader('Tests/Data/StatsData.csv').data
+        answer = CsvReader('Tests/Data/StataDataAns.csv').data
+        dataset = []
+        for row in test_median_data:
+            x = int(row['PopData'])
+            dataset.append(x)
+        for column in answer:
+            result = float(column['Median'])
+        self.assertEqual(self.statistics.median(dataset), result)
 
 
 

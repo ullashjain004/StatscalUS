@@ -2,13 +2,13 @@ from Calculator.Addition import addition
 from Calculator.Division import division
 
 
-# def median(numbers):
-#     n = len(numbers)
-#     numbers.sort()
-#     if n % 2 == 0:
-#         first_median = numbers[int(division(2, n))]
-#         second_median = numbers[len(numbers) // 2 - 1]
-#         med = division(2, addition(first_median, second_median))
-#     else:
-#         med = numbers[division(2, n)]
-#     return med
+def median(numbers):
+    length = len(numbers)
+    numbers.sort()
+    if length % 2 == 0:
+        med_1st = numbers[int(division(2, length))]
+        med_2nd = numbers[len(numbers) // 2 - 1]
+        mid = division(2, addition(med_1st, med_2nd))
+    else:
+        mid = numbers[division(2, length)]
+    return mid

@@ -1,6 +1,6 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
-##from Statistics.Median import median
+from Statistics.Median import median
 from CsvReader.CsvReader import CsvReader
 
 class Statistics(Calculator):
@@ -14,7 +14,7 @@ class Statistics(Calculator):
         self.result = mean(a)
         return self.result
 
-    # def median(self, a):
-    #     self.result = median(a)
-    #     return self.result
+    def median(self, a):
+        self.result = median(a)
+        return self.result
 
