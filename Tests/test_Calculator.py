@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
         self.calculator = Calculator()
 
     def test_instantiate_calculator(self):
-        self.assertIsInstance(self.calculator, Calculator)
+        self.assertIsInstance(self.calculator, Calculator)  
 
     def test_sub_csv(self):
         test_sub= CsvReader("Tests/Data/subtraction.csv").data
