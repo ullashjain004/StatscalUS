@@ -75,6 +75,13 @@ class MyTestCase(unittest.TestCase):
             result = float(column['Pop_Var'])
         self.assertEqual(self.statistics.pop_variance(dataset), result)
 
+    def test_confi_int_calculator(self):
+        test_confiint_data = CsvReader('Tests/Data/StatCalcData.csv').data
+        val = data_add(test_confiint_data)
+        confidence = 95
+        self.assertEqual(self.statistics.pop_confi_int(val, confidence), (131.0783, 156.631))
+        self.assertNotEqual(self.statistics.pop_confi_int(val, confidence), (132.578, 163.0283), "Incorrect Confidence Interval")
+
 
     def test_popZScore_calculator(self):
         test_popzscore_data = CsvReader('Tests/Data/StatsData.csv').data
