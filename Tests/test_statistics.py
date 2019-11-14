@@ -78,17 +78,30 @@ class MyTestCase(unittest.TestCase):
 
     def test_popZScore_calculator(self):
         test_popzscore_data = CsvReader('Tests/Data/StatsData.csv').data
-        answer = CsvReader('Tests/Data/StataDataAns.csv').data
+        answer = CsvReader('Tests/Data/Zscore.csv').data
         dataset = []
         for row in test_popzscore_data:
             x = int(row['PopData'])
             dataset.append(x)
             dataset1 = []
-        for column in answer:
-            result = float(column['Zscore'])
+        for row in answer:
+            result = float(row['Zscore'])
             dataset1.append(result)
         self.assertEqual(self.statistics.pop_z_score(dataset), dataset1)
 
+
+    def test_popcorrcoeff_calculator(self):
+        test_popcorrcoeff_data = CsvReader('Tests/Data/StatsData.csv').data
+        answer = CsvReader('Tests/Data/data.csv').data
+        dataset = []
+        for row in test_popcorrcoeff_data:
+            x = int(row['PopData'])
+            dataset.append(x)
+            dataset1 = []
+        for row in answer:
+            result = float(row['Zscore'])
+            dataset1.append(result)
+        self.assertEqual(self.statistics.popcorrcoeff(dataset), dataset1)
 
     # def test_proportion_calculator(self):
     #     test_prop_data = CsvReader('Tests/Data/StatsData.csv').data
