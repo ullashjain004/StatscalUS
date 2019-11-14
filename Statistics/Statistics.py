@@ -2,6 +2,7 @@ from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
 from Statistics.Median import median
 from CsvReader.CsvReader import CsvReader
+from Statistics.Mode import mode
 
 class Statistics(Calculator):
     data = []
@@ -9,6 +10,12 @@ class Statistics(Calculator):
     def __init__(self, filepath):
         self.data = CsvReader('Tests/Data/StatsData.csv')
         super().__init__()
+
+    def mode(self, a):
+        self.result = mode(a)
+        return self.result
+
+
 
     def mean(self, a):
         self.result = mean(a)
