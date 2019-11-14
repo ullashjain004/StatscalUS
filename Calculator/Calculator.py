@@ -3,7 +3,7 @@ from Calculator.Subtraction import subtraction
 from Calculator.Division import division
 from Calculator.Multiplication import multiply
 from Calculator.Square import square
-from Calculator.sqroot import sqroot
+from Calculator.sqrt import sqroot
 
 
 class Calculator:
@@ -13,7 +13,7 @@ class Calculator:
         pass
 
     def add(self, a, b):
-        self.result = addition(a, b)
+        self.result = addition(a, b) 
         return self.result
 
     def subtract(self, a, b):
