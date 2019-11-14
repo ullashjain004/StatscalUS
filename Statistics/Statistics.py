@@ -3,7 +3,7 @@ from Statistics.Mean import mean
 from Statistics.Median import median
 from CsvReader.CsvReader import CsvReader
 from Statistics.Mode import mode
-
+from Statistics.StandardDeviation import stddev
 class Statistics(Calculator):
     data = []
 
@@ -15,7 +15,9 @@ class Statistics(Calculator):
         self.result = mode(a)
         return self.result
 
-
+    def pop_stddev(self, a):
+        self.result = stddev(a)
+        return self.result
 
     def mean(self, a):
         self.result = mean(a)
