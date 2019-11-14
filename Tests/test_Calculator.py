@@ -9,12 +9,16 @@ class MyTestCase(unittest.TestCase):
         self.calculator = Calculator()
 
     def test_instantiate_calculator(self):
-        self.assertIsInstance(self.calculator, Calculator)  
+        self.assertIsInstance(self.calculator, Calculator)
+
+
 
     def test_sub_csv(self):
         test_sub= CsvReader("Tests/Data/subtraction.csv").data
         for row in test_sub: 
             self.assertEqual(self.calculator.subtract(int(row['Value 1']), int(row['Value 2'])), int(row['Result']))
+
+
 
     def test_add_csv(self):
         test_add = CsvReader("Tests/Data/addition.csv").data
@@ -43,6 +47,8 @@ class MyTestCase(unittest.TestCase):
         for row in test_div:
             result = round(self.calculator.divide(int(row['Value 2']), int(row['Value 1'])), 7)
             self.assertEqual(result, round(float(row['Result']),7))
+
+
 
     def test_squareroot_csv(self):
         test_sqroot= CsvReader("Tests/Data/root.csv").data
