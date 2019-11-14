@@ -3,9 +3,9 @@ from Calculator.Division import division
 
 
 def mean(numbers):
-    n = len(numbers)
+    length = len(numbers)
     t = 0
-    for x in range(0, n, 1):
+    for x in range(0, length, 1):
         t = float(addition(t, numbers[x]))
-    z = float(division(n, t))
+    z = float(division(length, t))
     return z
