@@ -50,6 +50,17 @@ class MyTestCase(unittest.TestCase):
             result = float(column['Median'])
         self.assertEqual(self.statistics.median(dataset), result)
 
+    def test_popstddev_calculator(self):
+        test_popstd_data = CsvReader('Tests/Data/StatsData.csv').data
+        answer = CsvReader('Tests/Data/StataDataAns.csv').data
+        dataset = []
+        for row in test_popstd_data:
+            x = int(row['PopData'])
+            dataset.append(x)
+        for column in answer:
+            result = float(column['Pop_Std'])
+        self.assertEqual(self.statistics.pop_stddev(dataset), result)
+
 
 
 if __name__ == '__main__':
