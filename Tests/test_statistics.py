@@ -14,8 +14,8 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_Pop_Mean_calculator(self):
-        test_mean_data = CsvReader('Tests/Data/StatsData.csv').data  
-        answer = CsvReader('Tests/Data/StataDataAns.csv').data
+        test_mean_data = CsvReader('Tests/Data/StatsData.csv').data
+        answer = CsvReader('Tests/Data/StataDataAns.csv').data  
         dataset = []
         for row in test_mean_data:
             a = int(row['PopData'])
