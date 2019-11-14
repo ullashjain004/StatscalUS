@@ -6,7 +6,7 @@ from CsvReader.CsvReader import CsvReader
 from Statistics.Mode import mode
 from Statistics.StandardDeviation import stddev
 from Statistics.variance import variance
-
+from Statistics.Zscore import Zscore
 
 
 
@@ -42,4 +42,8 @@ class Statistics(Calculator):
 
     def pop_variance(self, a):
         self.result = variance(a)
+        return self.result
+
+    def pop_z_score(self, a):
+        self.result = Zscore(a)
         return self.result
