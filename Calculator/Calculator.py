@@ -1,10 +1,10 @@
 from Calculator.Addition import addition
-from Calculator.Subtraction import subtraction
+from Calculator.Subtraction import sub
 from Calculator.Division import division
 from Calculator.Multiplication import multiply
 from Calculator.Square import square
 from Calculator.sqroot import sqroot
- 
+
 
 class Calculator:
     result = 0
@@ -14,7 +14,7 @@ class Calculator:
 
 
     def subtract(self, a, b):
-        self.result = subtraction(a, b)
+        self.result = sub(a, b)
         return self.result
 
 
