@@ -26,6 +26,19 @@ class MyTestCase(unittest.TestCase):
 
 
 
+    def test_Mode_calculator(self):
+        test_mode_data = CsvReader('Tests/Data/StatsData.csv').data
+        answer = CsvReader('Tests/Data/StataDataAns.csv').data
+        dataset = []
+        for row in test_mode_data:
+            x = int(row['PopData'])
+            dataset.append(x)
+        for column in answer:
+            result = float(column['Mode'])
+        self.assertEqual(self.statistics.mode(dataset), result)
+
+
+
     def test_Median_calculator(self):
         test_median_data = CsvReader('Tests/Data/StatsData.csv').data
         answer = CsvReader('Tests/Data/StataDataAns.csv').data
