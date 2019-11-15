@@ -5,7 +5,8 @@ In statistics, a confidence interval (CI) or the confidence level represents the
 
 Confidence intervals consist of a range of potential values of the unknown population parameter. However, the interval computed from a particular sample does not necessarily include the true value of the parameter. Based on the (usually taken) assumption that observed data are random samples from a true population, the confidence interval obtained from the data is also random.
 
-Calculating the Confidence Interval
+Calculating the Confidence Interval:
+
 The formula to calulate the Confidence Interval is given by:
 
 CI = X  ±  Z * s/√n
@@ -30,4 +31,5 @@ Confidence Interval	Z
 99.9%	3.291
 
 Utilization of Confidence Interval in our Code
+
 In order to calculate the Confidence Interval, we have assumed the confidence level to be 95 %. This gives us a z value of 1.960 by taking alpha as 5% (0.05). Now we calculate the mean and the standard deviation of the population taken from the StatCalcData.csv file and calculate the upper and lower limits of the confidence interval accordingly.
