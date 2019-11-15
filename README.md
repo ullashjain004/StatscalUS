@@ -13,3 +13,7 @@ Please click [Python Terms](https://github.com/Snehaphilip989/miniproject1/tree/
 ## Statistics Terms 
 
 The [References](https://github.com/ullashjain004/StatscalUS/tree/master/References) consists of descriptions of all stat calculation
+
+## Statistical calculations
+
+1. [Population_Mean](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Mean.py)
