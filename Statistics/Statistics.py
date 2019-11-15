@@ -11,7 +11,7 @@ from Statistics.PopCorrCoeff import pop_corr
 from Statistics.Confidence_Interval import confi_int
 from Statistics.Var_of_Pop_Prop import var_of_pop_prop
 from Statistics.Sample_mean import sample_mean
-
+from Statistics.Sample_Stddev import sample_std_dev
 
 class Statistics(Calculator):
     data = []
@@ -50,6 +50,10 @@ class Statistics(Calculator):
 
     def pop_confi_int(self, a):
         self.result = confi_int(a)
+        return self.result
+
+    def samplestddev(self, a):
+        self.result = sample_std_dev(a)
         return self.result
 
     def pop_z_score(self, a):
