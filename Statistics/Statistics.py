@@ -1,7 +1,7 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
 from Statistics.Median import median
-#from Statistics.Proportion import proportion
+from Statistics.Proportion import prop
 from CsvReader.CsvReader import CsvReader
 from Statistics.Mode import mode
 from Statistics.StandardDeviation import stddev
@@ -22,9 +22,9 @@ class Statistics(Calculator):
         self.result = mode(a)
         return self.result
 
-    # def pop_proportion(self, a):
-    #     self.result = proportion(a)
-    #     return self.result
+    def pop_proportion(self, a):
+        self.result = prop(a)
+        return self.result
 
 
 
