@@ -1,2 +1,2 @@
-Mean,Median,Mode,Pop_Std,Pop_Var
-257.2111,262,399,143.8546,2.07E+04
+Mean,Median,Mode,Pop_Std,Pop_Var,Zscore,Proportion,Var_Prop
+257.2111,262,399,143.8546,2.07E+04,,0.34667,0.0002907

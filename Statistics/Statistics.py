@@ -1,7 +1,7 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
 from Statistics.Median import median
-#from Statistics.Proportion import proportion
+from Statistics.Proportion import prop
 from CsvReader.CsvReader import CsvReader
 from Statistics.Mode import mode
 from Statistics.StandardDeviation import stddev
@@ -9,7 +9,7 @@ from Statistics.variance import variance
 from Statistics.Zscore import Zscore
 from Statistics.PopCorrCoeff import pop_corr
 from Statistics.Confidence_Interval import confi_int
-
+from Statistics.Var_of_Pop_Prop import var_of_pop_prop
 
 class Statistics(Calculator):
     data = []
@@ -22,11 +22,9 @@ class Statistics(Calculator):
         self.result = mode(a)
         return self.result
 
-    # def pop_proportion(self, a):
-    #     self.result = proportion(a)
-    #     return self.result
-
-
+    def proportion(self, a):
+        self.result = prop(a)
+        return self.result
 
     def pop_stddev(self, a):
         self.result = stddev(a)
@@ -34,6 +32,10 @@ class Statistics(Calculator):
 
     def mean(self, a):
         self.result = mean(a)
+        return self.result
+
+    def pop_prop(self, a):
+        self.result = var_of_pop_prop(a)
         return self.result
 
     def median(self, a):
