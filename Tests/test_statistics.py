@@ -97,6 +97,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.pop_z_score(dataset), dataset1)
 
 
+
     def test_popcorrcoeff_calculator(self):
         test_popcorrcoeff_data = CsvReader('Tests/Data/StatsData.csv').data
         answer = CsvReader('Tests/Data/data.csv').data
