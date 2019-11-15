@@ -18,3 +18,4 @@ The [References](https://github.com/ullashjain004/StatscalUS/tree/master/Referen
 
 1. [Population_Mean](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Mean.py)
 2. [Median](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Median.py)
+3. [Mode](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Mode.py)
