@@ -106,19 +106,21 @@ class MyTestCase(unittest.TestCase):
             dataset.append(x)
             dataset1 = []
         for row in answer:
-            result = float(row['Zscore'])
+            result = float(row['Result'])
             dataset1.append(result)
         self.assertEqual(self.statistics.popcorrcoeff(dataset), dataset1)
 
-    # def test_proportion_calculator(self):
-    #     test_prop_data = CsvReader('Tests/Data/StatsData.csv').data
-    #     answer = CsvReader('Tests/Data/StataDataAns.csv').data
-    #     for row in test_prop_data:
-    #         x = int(row['PopData'])
-    #         dataset.append(x)
-    #     for column in answer:
-    #         result = float(column['Proportion'])
-    #         self.assertEqual(self.statistics.pop_proportion(dataset), result)
+    def test_prop_calculator(self):
+        test_prop_data = CsvReader('Tests/Data/StatsData.csv').data
+        answer = CsvReader('Tests/Data/StataDataAns.csv').data
+        for row in test_prop_data:
+            x = int(row['PopData'])
+            dataset.append(x)
+        for column in answer:
+            result = float(column['Proportion'])
+            self.assertEqual(self.statistics.pop_proportion(dataset), result)
+
+
 
 if __name__ == '__main__':
     unittest.main()
