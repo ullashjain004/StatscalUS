@@ -11,7 +11,7 @@ from Statistics.PopCorrCoeff import pop_corr
 from Statistics.Confidence_Interval import confi_int
 
 
-class Statistics(Calculator):
+class Statistics(Calculator): 
     data = []
 
     def __init__(self, filepath):
