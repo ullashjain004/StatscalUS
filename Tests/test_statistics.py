@@ -119,7 +119,7 @@ class MyTestCase(unittest.TestCase):
             dataset.append(x)
         for column in answer:
             result = float(column['Proportion'])
-            self.assertEqual(self.statistics.pop_proportion(dataset), result)
+            self.assertEqual(self.statistics.proportion(dataset), result)
 
 
 
