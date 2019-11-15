@@ -64,6 +64,15 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.pop_stddev(dataset), result)
 
 
+    def test_sample_mean_calculator(self):
+        test_sample_data = CsvReader('Tests/Data/StatsData.csv').data
+        dataset = []
+        for row in test_sample_data:
+            a = int(row['PopData'])
+            dataset.append(a)
+            p, q = self.statistics.samplemean(dataset)
+            self.assertEqual(p, q)
+
     def test_popvar_calculator(self):
         test_popvar_data = CsvReader('Tests/Data/StatsData.csv').data
         answer = CsvReader('Tests/Data/StataDataAns.csv').data
