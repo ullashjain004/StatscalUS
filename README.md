@@ -27,3 +27,4 @@ The [References](https://github.com/ullashjain004/StatscalUS/tree/master/Referen
 9. [Population Variance](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/variance.py)
 10. [Proportion](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Proportion.py)
 11. [Sample Mean](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Sample_mean.py)
+12. [Sample Std Deviation](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Sample_Stddev.py)
