@@ -11,7 +11,7 @@ from Statistics.PopCorrCoeff import pop_corr
 from Statistics.Confidence_Interval import confi_int
 
 
-class Statistics(Calculator): 
+class Statistics(Calculator):
     data = []
 
     def __init__(self, filepath):
@@ -22,7 +22,7 @@ class Statistics(Calculator):
         self.result = mode(a)
         return self.result
 
-    def pop_proportion(self, a):
+    def proportion(self, a):
         self.result = prop(a)
         return self.result
 
