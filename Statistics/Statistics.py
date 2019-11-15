@@ -10,6 +10,8 @@ from Statistics.Zscore import Zscore
 from Statistics.PopCorrCoeff import pop_corr
 from Statistics.Confidence_Interval import confi_int
 from Statistics.Var_of_Pop_Prop import var_of_pop_prop
+from Statistics.Sample_mean import sample_mean
+
 
 class Statistics(Calculator):
     data = []
@@ -52,6 +54,10 @@ class Statistics(Calculator):
 
     def pop_z_score(self, a):
         self.result = Zscore(a)
+        return self.result
+
+    def samplemean(self, a):
+        self.result = sample_mean(a)
         return self.result
 
     def popcorrcoeff(self, a, b):
