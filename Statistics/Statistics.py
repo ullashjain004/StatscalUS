@@ -9,7 +9,7 @@ from Statistics.variance import variance
 from Statistics.Zscore import Zscore
 from Statistics.PopCorrCoeff import pop_corr
 from Statistics.Confidence_Interval import confi_int
-
+from Statistics.Var_of_Pop_Prop import var_of_pop_prop
 
 class Statistics(Calculator):
     data = []
@@ -26,14 +26,16 @@ class Statistics(Calculator):
         self.result = prop(a)
         return self.result
 
-
-
     def pop_stddev(self, a):
         self.result = stddev(a)
         return self.result
 
     def mean(self, a):
         self.result = mean(a)
+        return self.result
+
+    def pop_prop(self, a):
+        self.result = var_of_pop_prop(a)
         return self.result
 
     def median(self, a):
