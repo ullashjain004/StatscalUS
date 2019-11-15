@@ -25,3 +25,4 @@ The [References](https://github.com/ullashjain004/StatscalUS/tree/master/Referen
 7. [Pop_Corr_Coeff](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/PopCorrCoeff.py)
 8. [Confidence Interval](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Confidence_Interval.py)
 9. [Population Variance](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/variance.py)
+10. [Proportion](https://github.com/ullashjain004/StatscalUS/blob/master/Statistics/Proportion.py)
